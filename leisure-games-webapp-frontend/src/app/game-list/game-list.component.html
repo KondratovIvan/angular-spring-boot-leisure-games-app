@@ -1,0 +1,19 @@
+<h2> Games List </h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Minimal players amount</th>
+            <th>Description</th>
+            <th>Image Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let game of games">
+            <td>{{game.name}}</td>
+            <td>{{game.minPlayersAmount}}</td>
+            <td>{{game.description}}</td>
+            <td>{{game.imageLink}}</td>
+        </tr>
+    </tbody>
+</table>
