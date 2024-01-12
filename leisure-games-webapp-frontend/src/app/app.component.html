@@ -1,4 +1,17 @@
+<nav class="navbar  navbar-expand-sm  navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="games" routerLinkActive="active" class="nav-link">Games list</a>
+        </li>
+    </ul>
+</nav>
+
 <h1 class="text-center">{{title}}</h1>
 <div class="container">
-<app-game-list></app-game-list>
+    <router-outlet></router-outlet>
 </div>
+<footer class="footer">
+    <div class ="container">
+        <span>Here you can find the best leisure game for you and your frinds</span>
+    </div>
+</footer>
