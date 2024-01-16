@@ -23,8 +23,9 @@ public class GameService {
         Game updatedGame= gameRepository.findById(id)
                 .map(entity -> {
                     entity.setName(game.getName());
-                    entity.setMinPlayersAmount(game.getMinPlayersAmount());
-                    entity.setDescription(game.getDescription());
+                    entity.setFame(game.getFame());
+                    entity.setShortDesc(game.getShortDesc());
+                    entity.setFullDesc(game.getFullDesc());
                     entity.setImageLink(game.getImageLink());
                     return gameRepository.save(entity);
                 })

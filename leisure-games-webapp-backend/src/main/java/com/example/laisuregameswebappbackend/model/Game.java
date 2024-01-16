@@ -12,10 +12,12 @@ public class Game {
     private Integer id;
     @Column(name = "name")
     private String name;
-    @Column(name = "min_players_amount")
-    private Integer minPlayersAmount;
-    @Column(name = "description")
-    private String description;
+    @Column(name = "fame")
+    private String fame;
+    @Column(name="shortDesc")
+    private String shortDesc;
+    @Column(name = "fullDesc")
+    private String fullDesc;
     @Column(name = "image_link")
     private String imageLink;
 }
