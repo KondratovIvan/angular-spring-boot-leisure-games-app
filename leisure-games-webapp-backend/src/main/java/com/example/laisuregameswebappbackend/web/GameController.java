@@ -19,7 +19,7 @@ public class GameController {
     }
 
     @PostMapping
-    public Game saveGame(@RequestBody Game game){
+    public Game saveGame(@RequestBody Game game) {
         return gameService.create(game);
     }
 
@@ -29,12 +29,17 @@ public class GameController {
     }
 
     @GetMapping
-    public List<Game> getAllGames(){
+    public List<Game> getAllGames() {
         return gameService.getAll();
     }
 
+    @GetMapping("{id}")
+    public Game getGameById(@PathVariable Integer id) throws ResourceNotFoundException {
+        return gameService.getById(id);
+    }
+
     @DeleteMapping("{id}")
-    public void deleteGameById(@PathVariable Integer id){
+    public void deleteGameById(@PathVariable Integer id) {
         gameService.removeById(id);
     }
 }

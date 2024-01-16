@@ -31,9 +31,9 @@ public class GameService {
                 .orElseThrow(ResourceNotFoundException::new);
         return updatedGame;
     }
-//    public Game getById(Integer id){
-//        return gameRepository.getById(id);
-//    }
+    public Game getById(Integer id) throws ResourceNotFoundException {
+        return gameRepository.findById(id).orElseThrow(ResourceNotFoundException::new);
+    }
 
     public List<Game> getAll(){
         return gameRepository.findAll();

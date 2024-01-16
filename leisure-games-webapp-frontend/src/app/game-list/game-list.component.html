@@ -6,6 +6,7 @@
             <th>Minimal players amount</th>
             <th>Description</th>
             <th>Image Link</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -14,6 +15,9 @@
             <td>{{game.minPlayersAmount}}</td>
             <td>{{game.description}}</td>
             <td>{{game.imageLink}}</td>
+            <td>
+                <button (click) = "gameDetails(game.id)" class = "btn btn-info">View</button>
+            </td>
         </tr>
     </tbody>
 </table>

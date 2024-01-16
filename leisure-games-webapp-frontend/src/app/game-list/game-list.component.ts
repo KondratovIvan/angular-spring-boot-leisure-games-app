@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Game } from '../game'
 import { GameService } from '../game.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-game-list',
@@ -11,23 +12,9 @@ export class GameListComponent implements OnInit{
 
   games: Game[]= [];
   
-  constructor(private gameService: GameService){}
+  constructor(private gameService: GameService,  private router: Router){}
 
-  ngOnInit(): void{
-    // this.games=[{
-    //   "id":1,
-    //   "name":"testGame",
-    //   "minPlayersAmount":3,
-    //   "description":"testDesc",
-    //   "imageLink":"testLink"
-    // },
-    // {
-    //   "id":2,
-    //   "name":"testGame",
-    //   "minPlayersAmount":3,
-    //   "description":"testDesc",
-    //   "imageLink":"testLink"
-    // }]
+  ngOnInit(): void{ 
     this.getGames();
   }
 
@@ -39,4 +26,9 @@ export class GameListComponent implements OnInit{
       console.error('Произошла ошибка при получении данных:', error);
     });
   }
+
+  gameDetails(id: number){
+    this.router.navigate(['game-details', id]);
+  }
+
 }

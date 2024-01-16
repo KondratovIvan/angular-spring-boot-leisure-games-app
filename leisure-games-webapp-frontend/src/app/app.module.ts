@@ -4,11 +4,13 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GameListComponent } from './game-list/game-list.component';
+import { GameDetailsComponent } from './game-details/game-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GameListComponent
+    GameListComponent,
+    GameDetailsComponent
   ],
   imports: [
     BrowserModule,
