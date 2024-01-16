@@ -1,15 +1,17 @@
 export class Game {
     id:number;
     name:string;
-    minPlayersAmount:number;
-    description:string;
+    fame:string;
+    shortDesc:string;
+    fullDesc:string;
     imageLink:string;
 
-    constructor(id?: number, name?: string, minPlayersAmount?: number, description?: string, imageLink?: string) {
+    constructor(id?: number, name?: string, fame?: string, shortDesc?:string, fullDesc?: string, imageLink?: string) {
         this.id = id || 0;
         this.name = name || '';
-        this.minPlayersAmount = minPlayersAmount || 0;
-        this.description = description || '';
+        this.fame = fame || '';
+        this.shortDesc = shortDesc || '';
+        this.fullDesc = fullDesc || '';
         this.imageLink = imageLink || '';
     }
 }

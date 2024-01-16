@@ -1,15 +1,13 @@
-<h3>View game details</h3>
-<div>
+<h3 class="game-detail-heder-label" style="text-align: center">Game details</h3>
+<div class="game-detail-text">
     <div>
-        <label><b> Name </b></label> {{game.name}}
+        <label class="game-detail-heder-label"><b> Name: </b></label> {{game.name}}
     </div>
     <div>
-        <label><b> Minimal players amount </b></label> {{game.minPlayersAmount}}
+        <label class="game-detail-heder-label"><b> Full description: </b></label> {{game.fullDesc}}
     </div>
+    <br>
     <div>
-        <label><b> Description </b></label> {{game.description}}
-    </div>
-    <div>
-        <label><b> Image Link </b></label> {{game.imageLink}}
+        <img src="{{game.imageLink}}" alt="Game Image" width="730" height="480">
     </div>
 </div>

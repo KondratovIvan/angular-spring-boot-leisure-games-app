@@ -33,3 +33,10 @@ body{
 .custom-header{
     color: #BAFF39;
 }
+button{
+  background-color: #BAFF39;
+}
+div img {
+  display: block;
+  margin: 0 auto;
+}

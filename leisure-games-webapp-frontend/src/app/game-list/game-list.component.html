@@ -3,20 +3,18 @@
     <thead>
         <tr>
             <th>Name</th>
-            <th>Minimal players amount</th>
-            <th>Description</th>
-            <th>Image Link</th>
+            <th>Fame</th>
+            <th>Short description</th>
             <th>Actions</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor = "let game of games">
             <td>{{game.name}}</td>
-            <td>{{game.minPlayersAmount}}</td>
-            <td>{{game.description}}</td>
-            <td>{{game.imageLink}}</td>
+            <td>{{game.fame}}</td>
+            <td>{{game.shortDesc}}</td>
             <td>
-                <button (click) = "gameDetails(game.id)" class = "btn btn-info">View</button>
+                <button (click) = "gameDetails(game.id)" >View</button>
             </td>
         </tr>
     </tbody>

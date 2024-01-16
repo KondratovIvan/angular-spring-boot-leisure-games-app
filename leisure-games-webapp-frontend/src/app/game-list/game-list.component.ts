@@ -23,7 +23,7 @@ export class GameListComponent implements OnInit{
       this.games=data;
     },
     error => {
-      console.error('Произошла ошибка при получении данных:', error);
+      console.error('An error occurred while receiving data:', error);
     });
   }
 
