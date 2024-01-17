@@ -1,0 +1,22 @@
+<h2 class="custom-header">Favorite Games</h2>
+<table class="table table-striped custom-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Fame</th>
+      <th>Short description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let game of favoriteGames">
+      <td>{{ game.name }}</td>
+      <td>{{ game.fame }}</td>
+      <td>{{ game.shortDesc }}</td>
+      <td>
+        <button (click) = "gameDetails(game.id)" >View</button>
+        <i class="fas fa-star star-selected" (click)="removeFromFavorites(game)"></i>
+      </td>
+    </tr>
+  </tbody>
+</table>

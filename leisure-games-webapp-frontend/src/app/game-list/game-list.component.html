@@ -15,6 +15,7 @@
             <td>{{game.shortDesc}}</td>
             <td>
                 <button (click) = "gameDetails(game.id)" >View</button>
+                <i class="fas fa-star" [ngClass]="{'star-selected': isInFavorites(game)}" (click)="toggleFavorites(game)"></i>
             </td>
         </tr>
     </tbody>
