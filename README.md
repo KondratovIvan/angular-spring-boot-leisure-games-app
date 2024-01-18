@@ -7,7 +7,9 @@ To run this application you must
 git clone https://github.com/KondratovIvan/angular-spring-boot-leisure-games-webapp
 ```
 
-**2. Spring boot app**
+**2. Create 'leisureGames' postgresql DB**
+
+**3. Spring boot app**
 * Open folder leisure-games-webapp-backend in Java IDE
 
 * Build the maven project:
@@ -27,7 +29,7 @@ mvn clean install
 }
 ```
 
-**3. Angular app**
+**4. Angular app**
 * Open folder leisure-games-webapp-frontend in IDE with web development support, VSC for example
 
 * Open a terminal, go to leisure-games-webapp-frontend folder and start Angualr project:
