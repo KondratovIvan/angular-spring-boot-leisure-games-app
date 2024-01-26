@@ -27,6 +27,7 @@ public class GameService {
                     entity.setShortDesc(game.getShortDesc());
                     entity.setFullDesc(game.getFullDesc());
                     entity.setImageLink(game.getImageLink());
+                    entity.setCategory(game.getCategory());
                     return gameRepository.save(entity);
                 })
                 .orElseThrow(ResourceNotFoundException::new);
