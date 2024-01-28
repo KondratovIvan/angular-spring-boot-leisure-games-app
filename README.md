@@ -38,6 +38,6 @@ ng serve
 ```
 
 * Open browser and browse at:  http://localhost:4200/
-![image](https://github.com/KondratovIvan/angular-spring-boot-leisure-games-webapp/assets/94958641/9de9b80d-16e6-4789-9bab-b7eb1a1ccd44)
+![image](https://github.com/KondratovIvan/angular-spring-boot-leisure-games-webapp/assets/94958641/b5ae6b2a-c72f-4cb9-b308-dd6d7d6e16bb)
 ![image](https://github.com/KondratovIvan/angular-spring-boot-leisure-games-webapp/assets/94958641/761643ea-3d55-46d5-aef0-05bbec4f3055)
 ![image](https://github.com/KondratovIvan/angular-spring-boot-leisure-games-webapp/assets/94958641/259275c2-863f-49bc-a926-f64d24de3ab7)
