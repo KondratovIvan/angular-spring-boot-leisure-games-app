@@ -15,11 +15,11 @@ body{
 }
 
 .custom-navbar .nav-link {
-    color: #fff; /* Белый цвет текста */
+    color: #fff;
   }
   
 .custom-navbar .nav-link:hover {
-    color: #ddd; /* Цвет текста при наведении */
+    color: #ddd;
   }
 
 .custom-table {
@@ -27,7 +27,7 @@ body{
   }
   
 .custom-table th, .custom-table td {
-    color: #fff; /* Белый цвет текста в ячейках таблицы */
+    color: #fff;
   }
 .custom-header{
     color: #BAFF39;

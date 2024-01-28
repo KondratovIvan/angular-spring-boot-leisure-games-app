@@ -1,22 +1,39 @@
 <h2 class="custom-header"> Games List </h2>
+
+<div class="filter-row" style="color: #BAFF39; display: flex; align-items: center;">
+  <p class="filter-label" style="font-size: 30px; margin-right: 15px;">Filter:</p>
+  <label style="font-size: 20px; margin-right: 15px;">
+    <input type="radio" id="radio4" name="group" value="nothing" checked (change)="onRadioChange($event)"> No filter
+  </label>
+  <label style="font-size: 20px; margin-right: 15px;">
+    <input type="radio" id="radio1" name="group" value="speaking" (change)="onRadioChange($event)"> Speaking
+  </label>
+  <label style="font-size: 20px; margin-right: 15px;">
+    <input type="radio" id="radio2" name="group" value="interaction" (change)="onRadioChange($event)"> Interaction
+  </label>
+  <label style="font-size: 20px; margin-right: 15px;">
+    <input type="radio" id="radio3" name="group" value="all" (change)="onRadioChange($event)"> Optionally
+  </label>
+</div>
+
 <table class="table table-striped custom-table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Fame</th>
-            <th>Short description</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor = "let game of games">
-            <td>{{game.name}}</td>
-            <td>{{game.fame}}</td>
-            <td>{{game.shortDesc}}</td>
-            <td>
-                <button (click) = "gameDetails(game.id)" >View</button>
-                <i class="fas fa-star" [ngClass]="{'star-selected': isInFavorites(game)}" (click)="toggleFavorites(game)"></i>
-            </td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Fame</th>
+      <th>Short description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let game of filteredGames">
+      <td>{{game.name}}</td>
+      <td>{{game.fame}}</td>
+      <td>{{game.shortDesc}}</td>
+      <td>
+        <button (click)="gameDetails(game.id)">View</button>
+        <i class="fas fa-star" [ngClass]="{'star-selected': isInFavorites(game)}" (click)="toggleFavorites(game)"></i>
+      </td>
+    </tr>
+  </tbody>
 </table>
